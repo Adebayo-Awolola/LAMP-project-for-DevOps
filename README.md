@@ -106,8 +106,8 @@ Create a new file named index.php inside your custom web root folder:$ vim /var/
 
 A blank file. Add the following text, which is valid PHP code, inside the file:
 
-<?php
-phpinfo();
+"<?php
+phpinfo();"
 Save and close the file, refresh the page and you will see a page similar to this:
 ![image](https://github.com/user-attachments/assets/b014259d-d2e6-4053-9c7a-5e3eceb03be4)
 
