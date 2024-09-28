@@ -1,5 +1,7 @@
 Steps:
 Create an EC2 Instance:
+
+
 ![image](https://github.com/user-attachments/assets/d929caad-c6b8-4558-83c7-6dab9c8c9e30)
 
 
