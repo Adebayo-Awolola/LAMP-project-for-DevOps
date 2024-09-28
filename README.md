@@ -1,8 +1,8 @@
 Steps:
 Create an EC2 Instance:
 
+![image](https://github.com/user-attachments/assets/fcfe6083-c69f-4e10-98d0-4e8442d53930)
 
-![image](https://github.com/user-attachments/assets/d929caad-c6b8-4558-83c7-6dab9c8c9e30)
 
 
 Choose a cloud provider (AWS, Azure, GCP) and create an EC2 instance in the desired region.
@@ -10,6 +10,8 @@ Configure the instance with appropriate specifications (e.g., CPU, RAM, storage)
 Open necessary security group rules to allow inbound traffic on port 80 (HTTP) and 443 (HTTPS) for web access and port 3306 (MySQL) for database connections.
 
 Log in to the EC2 Instance: I used putty, you can use any terminal emulator of your choice.
+
+![image](https://github.com/user-attachments/assets/8860f87b-d568-49cd-a79f-ff9545c4f9c7)
 
 
 Connect to your EC2 instance using SSH or a remote desktop connection.
@@ -25,12 +27,18 @@ sudo apt install apache2.
 
 Verify Apache is running:
 Access the instance's public IP address in a web browser. You should see a default Apache page.
+![image](https://github.com/user-attachments/assets/442c96f0-2dcf-426a-8c48-c061ce13b6c9)
+
 
 Install MySQL Database:
 Install MySQL server:
 Bash
 sudo apt install mysql-server
+When the installation is finished, log in to the MySQL console by typing:
+$ sudo mysql
+This will log you in as the administrative database user root, which is inferred by the use of sudo when running this command. You should see output like this:
 
+![image](https://github.com/user-attachments/assets/6c20146b-35bf-4739-8700-b350567413a2)
 Secure the MySQL installation:
 Bash
 sudo mysql_secure_installation
@@ -101,6 +109,8 @@ A blank file. Add the following text, which is valid PHP code, inside the file:
 <?php
 phpinfo();
 Save and close the file, refresh the page and you will see a page similar to this:
+![image](https://github.com/user-attachments/assets/b014259d-d2e6-4053-9c7a-5e3eceb03be4)
+
 
 
 
